@@ -1,0 +1,21 @@
+{
+  "name": "testproj",
+  "version": "1.0.0",
+  "description": "test project for using snyk",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.js",
+    "docker-build": "docker build -t testproj .",
+    "snyk-test-docker": "snyk test --docker testproj:latest"
+  },
+  "author": "Jeff M",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "2.3.0",
+    "express": "^4.14.0",
+    "node-jq": "^1.3.1"
+  },
+  "devDependencies": {
+    "tap": "^12.0.1"
+  }
+}
